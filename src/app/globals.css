@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+body.dark {
+  --background: #262c2e;
+  --foreground: #ededed;
+  --myblue: #009bd6;
+  --textcolor: white;
+}
+
+body.light {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ededed;
+  --myblue: #009bd6;
+  --textcolor: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #262c2e;
     --foreground: #ededed;
   }
 }
@@ -17,5 +26,13 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --background: #262c2e;
+  --foreground: #ededed;
+  --myblue: #009bd6;
+  --textcolor: white;
 }
