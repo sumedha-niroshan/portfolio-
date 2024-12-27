@@ -19,7 +19,7 @@ function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0  shadow-md z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-background  shadow-md z-50 bg-opacity-100">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <Link href="/">
@@ -46,7 +46,7 @@ function NavBar() {
         <div
           className={`${
             navbarOpen ? "block" : "hidden"
-          } absolute md:static top-16 left-0 w-full md:w-auto  md:bg-transparent md:flex md:items-center`}
+          } absolute md:static top-16 left-0 w-full md:w-auto bg-background  md:bg-transparent md:flex md:items-center`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 items-center w-full md:w-auto">
             {navlinks.map((link, index) => (
