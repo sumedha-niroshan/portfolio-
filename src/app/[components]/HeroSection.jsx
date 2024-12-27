@@ -14,7 +14,7 @@ function HeroSection() {
         <div className="flex text-textcolor text-xl ">
           Hello,<p className="text-myblue"> I'm </p>
         </div>
-        <div className="text-textcolor text-5xl lg:text-6xl font-medium ">
+        <div className="text-textcolor text-4xl lg:text-6xl font-medium ">
           Sumedha Niroshan
         </div>
         <div className="text-textcolor text-lg lg:text-xl font-semibold">
