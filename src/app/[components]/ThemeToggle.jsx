@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 
 function ThemeToggle() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   // On mount, check for a saved theme in localStorage
   useEffect(() => {

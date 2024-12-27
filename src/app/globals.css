@@ -6,12 +6,14 @@ body.dark {
   --background: #262c2e;
   --foreground: #ededed;
   --myblue: #009bd6;
+  --textcolor: white;
 }
 
-body {
-  --background: #90b71b;
+body.light {
+  --background: #ffffff;
   --foreground: #ededed;
   --myblue: #009bd6;
+  --textcolor: black;
 }
 
 @media (prefers-color-scheme: dark) {

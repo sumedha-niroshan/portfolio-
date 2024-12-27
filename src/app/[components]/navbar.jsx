@@ -30,7 +30,7 @@ function NavBar() {
         <div className="flex items-center space-x-4 md:hidden">
           <button
             onClick={() => setNavbarOpen(!navbarOpen)}
-            className="text-black dark:text-red focus:outline-none"
+            className="text-textcolor focus:outline-none"
           >
             {navbarOpen ? (
               <XMarkIcon className="h-6 w-6" />
@@ -53,7 +53,7 @@ function NavBar() {
               <li key={index} className="p-2 md:p-0 w-full md:w-auto">
                 <Link
                   href={link.path}
-                  className="text-white hover:text-myblue block text-center px-4 py-2 md:px-0"
+                  className="text-textcolor hover:text-myblue block text-center px-4 py-2 md:px-0 font-semibold"
                 >
                   {link.title}
                 </Link>
@@ -64,7 +64,7 @@ function NavBar() {
 
         {/* "Hire Me" Button */}
         <div className="hidden md:flex  items-center space-x-4">
-          <button className="w-28 h-8 rounded-[30px] bg-[#009BD6] text-white hover:bg-[#007AAE] hidden lg:block">
+          <button className="w-28 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] hidden lg:block">
             HIRE ME
           </button>
           <div className="hidden md:block">
