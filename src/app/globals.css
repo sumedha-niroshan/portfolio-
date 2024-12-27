@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:class {
+body.dark {
   --background: #262c2e;
   --foreground: #ededed;
+  --myblue: #009bd6;
+}
+
+body {
+  --background: #90b71b;
+  --foreground: #ededed;
+  --myblue: #009bd6;
 }
 
 @media (prefers-color-scheme: dark) {

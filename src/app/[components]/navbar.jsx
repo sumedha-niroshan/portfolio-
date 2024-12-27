@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import DarkModeToggle from "./DarkModeToggle";
+import ThemeToggle from "./ThemeToggle";
 
 function NavBar() {
   const navlinks = [
@@ -26,18 +26,21 @@ function NavBar() {
           <Image src="/favicon.png" width={60} height={60} alt="Logo" />
         </Link>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setNavbarOpen(!navbarOpen)}
-          className="block md:hidden text-white focus:outline-none"
-        >
-          {navbarOpen ? (
-            <XMarkIcon className="h-6 w-6" />
-          ) : (
-            <Bars3Icon className="h-6 w-6" />
-          )}
-        </button>
-        <DarkModeToggle />
+        {/* Mobile Menu and Dark Mode Button (Together in a container) */}
+        <div className="flex items-center space-x-4 md:hidden">
+          <button
+            onClick={() => setNavbarOpen(!navbarOpen)}
+            className="text-black dark:text-red focus:outline-none"
+          >
+            {navbarOpen ? (
+              <XMarkIcon className="h-6 w-6" />
+            ) : (
+              <Bars3Icon className="h-6 w-6" />
+            )}
+          </button>
+
+          <ThemeToggle />
+        </div>
 
         {/* Menu Links */}
         <div
@@ -45,12 +48,12 @@ function NavBar() {
             navbarOpen ? "block" : "hidden"
           } absolute md:static top-16 left-0 w-full md:w-auto  md:bg-transparent md:flex md:items-center`}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-6 items-center">
+          <ul className="flex flex-col md:flex-row md:space-x-6 items-center w-full md:w-auto">
             {navlinks.map((link, index) => (
-              <li key={index} className="p-2 md:p-0">
+              <li key={index} className="p-2 md:p-0 w-full md:w-auto">
                 <Link
                   href={link.path}
-                  className="text-white hover:text-[#009BD6] block px-4 py-2 md:px-0"
+                  className="text-white hover:text-myblue block text-center px-4 py-2 md:px-0"
                 >
                   {link.title}
                 </Link>
@@ -58,12 +61,24 @@ function NavBar() {
             ))}
           </ul>
         </div>
-        <div className="hidden md:block">
-          <button className="w-28 h-8 rounded-[30px] bg-[#009BD6]">
+
+        {/* "Hire Me" Button */}
+        <div className="hidden md:flex  items-center space-x-4">
+          <button className="w-28 h-8 rounded-[30px] bg-[#009BD6] text-white hover:bg-[#007AAE] hidden lg:block">
             HIRE ME
           </button>
+          <div className="hidden md:block">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
+
+      {/* Mobile Dark Mode Toggle (When Menu is Open)
+      {navbarOpen && (
+        <div className="md:hidden flex justify-center mt-2">
+          <ThemeToggle />
+        </div>
+      )} */}
     </nav>
   );
 }
