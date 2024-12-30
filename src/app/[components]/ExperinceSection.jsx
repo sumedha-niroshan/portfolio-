@@ -9,12 +9,12 @@ function ExperinceSection() {
       <div className="text-myblue text-base font-bold mt-5">Experince</div>
       <div className="flex items-center gap-2 space-x-2 mt-2">
         <MdOutlineWork className="w-8 h-8 text-textcolor" />
-        <p className="text-2xl font-semibold text-text-color ">Job Experince</p>
+        <p className="text-2xl font-semibold text-textcolor ">Job Experince</p>
       </div>
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-8">
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-8 mt-5">
         {/* Logo and Company Information */}
-        <div className="flex items-center gap-4">
-          <div>
+        <div className="flex items-center gap-4 ">
+          <div className="">
             <Image
               src="/education/visiontechbs_logo.jpeg"
               width={50}
@@ -24,7 +24,7 @@ function ExperinceSection() {
             />
           </div>
           <div>
-            <p className="text-lg font-semibold text-gray-800 dark:text-white md:text-2xl">
+            <p className="text-lg font-semibold text-textcolor md:text-2xl">
               Vision Tech Business Solutions
             </p>
             <p className="text-sm text-gray-600 dark:text-gray-400 md:text-base">
@@ -35,7 +35,7 @@ function ExperinceSection() {
       </div>
 
       {/* Timeline Section */}
-      <div className="relative border-l-4 border-blue-500 pl-6">
+      <div className="relative border-l-2 border-blue-500 pl-3 md:pl-6 ml-5">
         {/* Associate DevOps Engineer Role */}
         <TimelineItem
           role="Associate DevOps Engineer"
