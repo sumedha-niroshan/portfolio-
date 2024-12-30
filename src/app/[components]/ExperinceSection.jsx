@@ -64,6 +64,41 @@ function ExperinceSection() {
           ]}
         />
       </div>
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-8 mt-5">
+        {/* Logo and Company Information */}
+        <div className="flex items-center gap-4 ">
+          <div className="">
+            <Image
+              src="/education/insee-logo.png"
+              width={50}
+              height={50}
+              alt="INSEE Cement Sri Lanka"
+              className="rounded-full shadow-lg"
+            />
+          </div>
+          <div>
+            <p className="text-lg font-semibold text-textcolor md:text-2xl">
+              INSEE Cement Sri Lanka
+            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 md:text-base">
+              Access Towers, Colombo, Sri Lanka
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Timeline Section */}
+      <div className="relative border-l-2 border-blue-500 pl-3 md:pl-6 ml-5">
+        {/* Associate DevOps Engineer Role */}
+        <TimelineItem
+          role="Industrial Trainee"
+          period="June 2023 -  Jan 2024"
+          location="Hybrid"
+          points={[
+            "During industrial training, enhanced the web application used by the Logistics Department to monitor vehicles and drivers, and subsequently provided training to application users.",
+          ]}
+        />
+      </div>
     </div>
   );
 }
