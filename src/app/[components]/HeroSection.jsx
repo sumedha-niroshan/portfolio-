@@ -78,7 +78,7 @@ function HeroSection() {
           />
         </div>
       </div>
-      <div className="w-full h-[1px] bg-black lg:mt-6"></div>
+      <div className="w-full h-[1px] bg-gray-400 lg:mt-6"></div>
     </>
   );
 }
