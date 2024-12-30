@@ -6,7 +6,9 @@ import TimelineItem from "./TimelineItem";
 function ExperinceSection() {
   return (
     <div>
-      <div className="text-myblue text-base font-bold mt-5">Experince</div>
+      <div id="experience" className="text-myblue text-base font-bold mt-5">
+        Experince
+      </div>
       <div className="flex items-center gap-2 space-x-2 mt-2">
         <MdOutlineWork className="w-8 h-8 text-textcolor" />
         <p className="text-2xl font-semibold text-textcolor ">Job Experince</p>
