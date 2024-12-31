@@ -35,10 +35,10 @@ function EducationSection() {
           <div className="">
             <Image
               src="/edu/uoc.png"
-              width={50}
-              height={50}
+              width={40}
+              height={40}
               alt="University of Colombo"
-              className="rounded-full shadow-lg"
+              className=" rounded-full shadow-lg"
             />
           </div>
           <div>
@@ -71,7 +71,7 @@ function EducationSection() {
               width={50}
               height={50}
               alt="Arcc logo"
-              className="rounded-full shadow-lg"
+              className="lg:w-10 rounded-full shadow-lg"
             />
           </div>
           <div>
