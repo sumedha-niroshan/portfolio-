@@ -4,18 +4,20 @@ import ExperinceSection from "./[components]/ExperinceSection";
 import ProjectSection from "./[components]/ProjectSection";
 import SkillSection from "./[components]/SkillSection";
 import EducationSection from "./[components]/EducationSection";
+import AboutMeSection from "./[components]/AboutMeSection";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col z-50">
       <HeaderSection />
 
-      <div className="container mt-24 mx-auto px-12 py-4b z-5 ">
+      <div className="container mt-24 mx-auto px-12 py-4b z-5">
         <HeroSection />
         <ExperinceSection />
         <ProjectSection />
         <SkillSection />
         <EducationSection />
+        <AboutMeSection />
       </div>
     </main>
   );
