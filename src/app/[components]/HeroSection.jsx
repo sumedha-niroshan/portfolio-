@@ -61,17 +61,25 @@ function HeroSection() {
             </Link>
           </div>
           <div className="flex gap-3 mt-6">
-            <button className="w-36 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] ">
-              DOWNLOAD CV
-            </button>
-            <button className="w-24 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] ">
-              HIRE ME
-            </button>
+            <a
+              href="./Resume_Sumedha_Niroshan.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="w-36 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] ">
+                DOWNLOAD CV
+              </button>
+            </a>
+            <a href="#about-me">
+              <button className="w-24 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] ">
+                HIRE ME
+              </button>
+            </a>
           </div>
         </div>
         <div className="mt-12">
           <Image
-            src="/sn.png"
+            src="/sumedha.png"
             width={1200}
             height={1200}
             alt="Sumedha Niroshan"

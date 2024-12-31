@@ -36,3 +36,7 @@ body {
   --myblue: #009bd6;
   --textcolor: white;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -9,7 +9,7 @@ import Footer from "./[components]/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col z-50">
+    <main className="flex min-h-screen flex-col z-50 scroll-smooth">
       <HeaderSection />
 
       <div className="container mt-24 mx-auto px-12 py-4b z-5">
@@ -21,7 +21,6 @@ export default function Home() {
         <AboutMeSection />
         <Footer />
       </div>
-      
     </main>
   );
 }

@@ -77,9 +77,11 @@ function NavBar() {
 
         {/* "Hire Me" Button */}
         <div className="hidden md:flex  items-center space-x-4">
-          <button className="w-28 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] hidden lg:block">
-            HIRE ME
-          </button>
+          <a href="#about-me">
+            <button className="w-28 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] hidden lg:block">
+              HIRE ME
+            </button>
+          </a>
           <div className="hidden md:block">
             <ThemeToggle />
           </div>

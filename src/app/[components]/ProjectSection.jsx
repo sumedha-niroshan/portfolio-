@@ -5,6 +5,14 @@ import { useState } from "react";
 
 const projects = [
   {
+    title: "CI/CD Pipeline",
+    technology: "Docker, Jenkins",
+    image: "/projects/devops-1.png",
+    liveLink: "#",
+    repoLink: "#",
+    category: "DevOps",
+  },
+  {
     title: "Hotel Landing page",
     technology: "Next.js",
     image: "/projects/Hotel_project.jpg",
@@ -14,46 +22,35 @@ const projects = [
   },
   {
     title: "Hitjob.lk Web Application",
-    technology: "Nextjs, MongoDB, Express.js, Node.js, Tailwind CSS, Docker",
+    technology: "Nextjs, MongoDB, Node.js, Tailwind CSS",
     image: "/projects/hit-job.PNG",
     liveLink: "http://hitjob.lk/",
     repoLink: "https://github.com/sumedha-niroshan/hitjob.lk",
     category: "Web Development",
   },
   {
-    title: "Portfolio Website",
-    technology: "React.js",
-    image: "/path/to/image3.jpg",
-    description: "Personal portfolio for showcasing projects.",
-    liveLink: "#",
+    title: "Mybrid Automobiles",
+    technology: "Wordpress",
+    image: "/projects/mybridautomobiles.PNG",
+    liveLink: "https://mybridautomobiles.lk/",
     repoLink: "#",
     category: "Web Development",
   },
   {
-    title: "Hotel Web Application",
-    technology: "Next.js",
-    image: "/education/visiontechbs_logo.jpeg",
-    description: "Experience something new every moment",
-    liveLink: "#",
+    title: "VTAS Associates",
+    technology: "Wordpress",
+    image: "/projects/vtas.PNG",
+    liveLink: "https://www.vtas.lk/",
     repoLink: "#",
     category: "Web Development",
   },
+
   {
-    title: "CI/CD Pipeline",
-    technology: "Docker, Jenkins",
-    image: "/path/to/image2.jpg",
-    description: "Automating software delivery.",
+    title: " Modern Real Estate Marketplace",
+    technology: "MERN Stack , Redux toolkit ,  Tailwind Css , Firebase",
+    image: "/projects/mern-state.PNG",
     liveLink: "#",
-    repoLink: "#",
-    category: "DevOps",
-  },
-  {
-    title: "Portfolio Website",
-    technology: "React.js",
-    image: "/path/to/image3.jpg",
-    description: "Personal portfolio for showcasing projects.",
-    liveLink: "#",
-    repoLink: "#",
+    repoLink: "https://github.com/sumedha-Niroshan/mern-estate",
     category: "Web Development",
   },
 ];
@@ -99,14 +96,16 @@ function ProjectSection() {
             key={index}
             className="relative border-2 border-myblue p-4 rounded-lg shadow-lg flex flex-col"
           >
-            <span className="absolute top-4 right-4 bg-[#e67e22] text-white text-xs  px-2 py-1 rounded">
+            <span className="absolute top-4 right-4 bg-myblue text-white text-xs  px-2 py-1 rounded">
               {project.category}
             </span>
-            <img
-              src={project.image}
-              alt={project.title}
-              className="rounded-lg mb-4 shadow-xl"
-            />
+            <div className=" mb-4 w-full h-56">
+              <img
+                src={project.image}
+                alt={project.title}
+                className=" inset-0 w-full h-full object-cover rounded-lg shadow-xl"
+              />
+            </div>
             <h3 className="text-lg font-bold text-textcolor">
               {project.title}
             </h3>
