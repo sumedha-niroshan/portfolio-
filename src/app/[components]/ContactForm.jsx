@@ -48,6 +48,7 @@ function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             className="p-3 rounded-md bg-background text-textcolor border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
           />
           <input
             type="email"
@@ -56,6 +57,7 @@ function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             className="p-3 rounded-md bg-background text-textcolor border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
           />
         </div>
         {/* Message */}
@@ -66,6 +68,7 @@ function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           className="w-full p-3 rounded-md bg-background text-textcolor border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
         ></textarea>
         {/* Submit Button */}
         <button
