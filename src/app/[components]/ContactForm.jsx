@@ -38,11 +38,12 @@ function ContactForm() {
   return (
     <div className=" p-6 rounded-lg shadow-md mt-6">
       <h2 className="text-textcolor text-lg font-bold mb-4">Contact Form</h2>
-      <form className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4">
         {/* Full Name and Email */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input
             type="text"
+            name="name"
             placeholder="Full Name"
             value={formData.name}
             onChange={handleChange}
@@ -50,6 +51,7 @@ function ContactForm() {
           />
           <input
             type="email"
+            name="email"
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
@@ -59,6 +61,7 @@ function ContactForm() {
         {/* Message */}
         <textarea
           placeholder="Message"
+          name="message"
           rows="5"
           value={formData.message}
           onChange={handleChange}
