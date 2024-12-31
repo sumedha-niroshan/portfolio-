@@ -5,6 +5,7 @@ import ProjectSection from "./[components]/ProjectSection";
 import SkillSection from "./[components]/SkillSection";
 import EducationSection from "./[components]/EducationSection";
 import AboutMeSection from "./[components]/AboutMeSection";
+import Footer from "./[components]/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <EducationSection />
         <AboutMeSection />
       </div>
+      <Footer />
     </main>
   );
 }
