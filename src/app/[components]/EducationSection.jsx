@@ -2,6 +2,22 @@ import React from "react";
 import Image from "next/image";
 import TimelineItem from "./TimelineItem";
 import { FaUserGraduate } from "react-icons/fa";
+import { PiCertificateFill } from "react-icons/pi";
+
+const cetificates = [
+  {
+    title: "Solution Architect Associate (Ongoing)",
+    image: "/cetification/image.png",
+    liveLink: "",
+    repoLink: "",
+  },
+  {
+    title: "Cloud Practitioner Foundational (Ongoing)",
+    image: "/cetification/saa.png",
+    liveLink: "",
+    repoLink: "",
+  },
+];
 
 function EducationSection() {
   return (
@@ -77,6 +93,48 @@ function EducationSection() {
           points={["Combined Mathematics: B", "Physics: B", "Chemistry: B"]}
         />
       </div>
+
+      <div className="flex items-center gap-2 space-x-2 mt-14 mb-10 ">
+        <PiCertificateFill className="w-8 h-8 text-textcolor" />
+        <p className="text-2xl font-semibold text-textcolor ">Certification</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {cetificates.map((cetificate, index) => (
+          <div
+            key={index}
+            className="relative border-2 border-myblue p-4 rounded-lg shadow-lg flex flex-col lg:w-[350px] "
+          >
+            <img
+              src={cetificate.image}
+              alt={cetificate.title}
+              className="rounded-lg mb-4 shadow-xl"
+            />
+            <h3 className="text-lg font-bold text-textcolor">
+              {cetificate.title}
+            </h3>
+
+            <div className="flex justify-between  mt-4">
+              <a
+                href={cetificate.liveLink}
+                target="_blank"
+                className="px-4 py-2 bg-myblue text-sm rounded hover:bg-blue-600"
+                rel="noopener noreferrer"
+              >
+                View
+              </a>
+              <a
+                href={cetificate.repoLink}
+                target="_blank"
+                className="px-4 py-2 bg-myblue text-sm rounded hover:bg-blue-600"
+                rel="noopener noreferrer"
+              >
+                verify
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <div className="w-full h-[1px] bg-gray-400 lg:mt-6"></div>
     </div>
   );
