@@ -95,44 +95,44 @@ function AboutMeSection() {
         </div>
       </div>
 
-      <div className=" p-6 rounded-lg shadow-md">
+      <div className="p-6 rounded-lg shadow-md">
         <h2 className="text-textcolor text-lg font-bold mb-4">
           Work with Me via Freelance Platforms
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Fiverr */}
-          <div className="flex gap-7 items-center justify-center border border-gray-700 p-4 ">
+          <div className="flex gap-4 items-center justify-center border border-gray-700 p-4 rounded-md">
             <img
               src="/about-me/images.png"
               alt="Fiverr"
-              className="w-24 h-24 lg:w-48 lg:h-48 mb-4"
+              className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
             />
-            <div className="flex flex-col">
-              <span className="text-textcolor  font-semibold text-xl">
+            <div className="flex flex-col items-center md:items-start">
+              <span className="text-textcolor font-semibold text-base md:text-lg lg:text-xl">
                 Fiverr
               </span>
               <a
                 href="#"
-                className="mt-2 px-3 md:px-8 md:text-base md:py-2 py-1 text-sm bg-myblue text-white rounded-lg lg:rounded-[30px] hover:bg-blue-600"
+                className="mt-2 px-4 py-1 text-sm md:text-base bg-myblue text-white rounded-[30px] hover:bg-blue-600 transition-all"
               >
                 Hire Me
               </a>
             </div>
           </div>
           {/* Upwork */}
-          <div className="flex gap-7 items-center justify-center border border-gray-700 p-4 ">
+          <div className="flex gap-4 items-center justify-center border border-gray-700 p-4 rounded-md">
             <img
-              src="/about-me/upwork.png"
-              alt="upwork"
-              className="w-24 h-8 lg:w-48 lg:h-16 mb-4"
+              src="/about-me/upwork.jpg"
+              alt="Upwork"
+              className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
             />
-            <div className="flex flex-col">
-              <span className="text-textcolor  font-semibold text-xl">
+            <div className="flex flex-col items-center md:items-start">
+              <span className="text-textcolor font-semibold text-base md:text-lg lg:text-xl">
                 Upwork
               </span>
               <a
                 href="#"
-                className="mt-2 px-3 md:px-8 md:text-base md:py-2 py-1 text-sm bg-myblue text-white rounded-lg lg:rounded-[30px] hover:bg-blue-600"
+                className="mt-2 px-4 py-1 text-sm md:text-base bg-myblue text-white rounded-[30px] hover:bg-blue-600 transition-all"
               >
                 Hire Me
               </a>

@@ -17,7 +17,7 @@ function Footer() {
   return (
     <div className=" text-textcolor py-8">
       {/* Footer Main Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 px-4 md:px-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8  ">
         {/* Branding Section */}
         <div>
           <div className="flex items-center space-x-4">
@@ -71,13 +71,19 @@ function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <MdEmail className="text-textcolor w-5 h-5" />
-                <span className="text-textcolor">
+                <span className="text-textcolor text-sm">
                   sumedha.n.weerasekara@gmail.com
                 </span>
               </li>
             </ul>
           </div>
         </div>
+      </div>
+      <div className="flex w-full items-center justify-center  mt-4 border-t border-gray-700 pt-2 ">
+        <p>
+          &copy; {new Date().getFullYear()} Sumedha Niroshan. All rights
+          reserved
+        </p>
       </div>
     </div>
   );
