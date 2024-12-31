@@ -18,6 +18,14 @@ function NavBar() {
 
   const [navbarOpen, setNavbarOpen] = useState(false);
 
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
+  const closeNavbar = () => {
+    setNavbarOpen(false);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 bg-background  shadow-md z-50 bg-opacity-100">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
@@ -29,7 +37,7 @@ function NavBar() {
         {/* Mobile Menu and Dark Mode Button (Together in a container) */}
         <div className="flex items-center space-x-4 md:hidden">
           <button
-            onClick={() => setNavbarOpen(!navbarOpen)}
+            onClick={toggleNavbar}
             className="text-textcolor focus:outline-none"
           >
             {navbarOpen ? (
@@ -51,17 +59,17 @@ function NavBar() {
           <ul className="flex flex-col md:flex-row md:space-x-6 items-center w-full md:w-auto">
             {navlinks.map((link, index) => (
               <li
-                onClick={() => setNavbarOpen(navbarOpen)}
+                onClick={closeNavbar}
                 key={index}
                 className="p-2 md:p-0 w-full md:w-auto"
               >
-                <Link
+                <a
                   href={link.path}
                   className="text-textcolor hover:text-myblue block text-center px-4 py-2 md:px-0 font-semibold"
                   target={link.title === "BLOG" ? "_blank" : "_self"}
                 >
                   {link.title}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -69,9 +77,11 @@ function NavBar() {
 
         {/* "Hire Me" Button */}
         <div className="hidden md:flex  items-center space-x-4">
-          <button className="w-28 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] hidden lg:block">
-            HIRE ME
-          </button>
+          <a href="#about-me">
+            <button className="w-28 h-8 rounded-[30px] bg-myblue text-textcolor hover:bg-[#007AAE] hidden lg:block">
+              HIRE ME
+            </button>
+          </a>
           <div className="hidden md:block">
             <ThemeToggle />
           </div>
