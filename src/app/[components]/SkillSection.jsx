@@ -142,6 +142,79 @@ function SkillSection() {
           />
         </div>
       </div>
+      <div className="text-textcolor text-xl lg:text-2xl font-bold my-2">
+        System Administration Skills
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div>
+          <Skill
+            icon="https://img.icons8.com/?size=100&id=17842&format=png&color=000000"
+            name="Linux Administration (Ubuntu, CentOS)"
+            progress={70}
+          />{" "}
+        </div>
+        <div>
+          {" "}
+          <Skill
+            icon="https://img.icons8.com/?size=100&id=OlmjyQ9zkRzF&format=png&color=000000"
+            name="Windows"
+            progress={70}
+          />{" "}
+        </div>
+      </div>
+
+      <div className="text-textcolor text-xl lg:text-2xl font-bold my-2">
+        Web Development Skills
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div>
+          <Skill icon="/skills/mern.png" name="MEAN Stack" progress={70} />{" "}
+          <Skill
+            icon="/skills/frappe.png"
+            name="Frappe Framework"
+            progress={95}
+          />{" "}
+        </div>
+        <div>
+          {" "}
+          <Skill icon="/skills/nextjs.png" name="Next Js" progress={70} />{" "}
+        </div>
+        <div>
+          <Skill
+            icon="https://img.icons8.com/?size=100&id=13664&format=png&color=000000"
+            name="Wordpress"
+            progress={90}
+          />
+        </div>
+      </div>
+
+      <div className="text-textcolor text-xl lg:text-2xl font-bold my-2">
+        Design Tools
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div>
+          <Skill
+            icon="https://img.icons8.com/?size=100&id=W0YEwBDDfTeu&format=png&color=000000"
+            name="Figma"
+            progress={95}
+          />{" "}
+        </div>
+        <div>
+          {" "}
+          <Skill
+            icon="https://img.icons8.com/?size=100&id=NeNPFdj7MzXi&format=png&color=000000"
+            name="Adobe Photoshop"
+            progress={70}
+          />{" "}
+        </div>
+        <div>
+          <Skill
+            icon="https://img.icons8.com/?size=100&id=QaT9iepDXQab&format=png&color=000000"
+            name="Adobe illustrator"
+            progress={50}
+          />
+        </div>
+      </div>
     </div>
   );
 }
