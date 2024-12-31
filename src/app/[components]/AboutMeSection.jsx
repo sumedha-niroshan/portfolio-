@@ -6,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
 import { FaBehanceSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 
 function AboutMeSection() {
   return (
@@ -98,7 +99,7 @@ function AboutMeSection() {
         <h2 className="text-textcolor text-lg font-bold mb-4">
           Work with Me via Freelance Platforms
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Fiverr */}
           <div className="flex gap-7 items-center justify-center border border-gray-700 p-4 ">
             <img
@@ -131,7 +132,7 @@ function AboutMeSection() {
               </span>
               <a
                 href="#"
-                className="mt-2 px-8 py-2 bg-myblue text-white rounded-lg lg:rounded-[30px] hover:bg-blue-600"
+                className="mt-2 px-3 py-1 text-sm bg-myblue text-white rounded-lg lg:rounded-[30px] hover:bg-blue-600"
               >
                 Hire Me
               </a>
@@ -139,6 +140,8 @@ function AboutMeSection() {
           </div>
         </div>
       </div>
+
+      <ContactForm />
     </div>
   );
 }
