@@ -80,7 +80,7 @@ function ProjectSection() {
         {["ALL", "DevOps", "Web Development"].map((category) => (
           <button
             key={category}
-            className={`px-4 py-1 rounded-tr-3xl border-2 border-gray-300 ${
+            className={`px-4 py-1 text-xs rounded-tr-3xl border-2 border-gray-300 ${
               activeCategory === category
                 ? "bg-blue-500 text-textcolor"
                 : "bg-transparent hover:bg-gray-600 text-textcolor"

@@ -113,7 +113,7 @@ function AboutMeSection() {
               </span>
               <a
                 href="#"
-                className="mt-2 px-8 py-2 bg-myblue text-white rounded-lg lg:rounded-[30px] hover:bg-blue-600"
+                className="mt-2 px-3 md:px-8 md:text-base md:py-2 py-1 text-sm bg-myblue text-white rounded-lg lg:rounded-[30px] hover:bg-blue-600"
               >
                 Hire Me
               </a>
@@ -132,7 +132,7 @@ function AboutMeSection() {
               </span>
               <a
                 href="#"
-                className="mt-2 px-3 py-1 text-sm bg-myblue text-white rounded-lg lg:rounded-[30px] hover:bg-blue-600"
+                className="mt-2 px-3 md:px-8 md:text-base md:py-2 py-1 text-sm bg-myblue text-white rounded-lg lg:rounded-[30px] hover:bg-blue-600"
               >
                 Hire Me
               </a>
