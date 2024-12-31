@@ -58,7 +58,7 @@ function EducationSection() {
           role="Bachelor of  Physical Science"
           period="Jan 2020  -   Sep 2023"
           points={[
-            "pecialized in Computer Science and Physical Computing, focusing on theoretical foundations, practical applications, and innovative technologies.",
+            "Specialized in Computer Science and Physical Computing, focusing on theoretical foundations, practical applications, and innovative technologies.",
           ]}
         />
       </div>
@@ -135,7 +135,7 @@ function EducationSection() {
         ))}
       </div>
 
-      <div className="w-full h-[1px] bg-gray-400 lg:mt-6"></div>
+      <div className="w-full h-[1px] bg-gray-400 lg:my-7"></div>
     </div>
   );
 }
