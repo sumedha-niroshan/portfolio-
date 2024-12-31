@@ -63,13 +63,13 @@ function NavBar() {
                 key={index}
                 className="p-2 md:p-0 w-full md:w-auto"
               >
-                <Link
+                <a
                   href={link.path}
                   className="text-textcolor hover:text-myblue block text-center px-4 py-2 md:px-0 font-semibold"
                   target={link.title === "BLOG" ? "_blank" : "_self"}
                 >
                   {link.title}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
