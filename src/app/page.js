@@ -19,8 +19,9 @@ export default function Home() {
         <SkillSection />
         <EducationSection />
         <AboutMeSection />
+        <Footer />
       </div>
-      <Footer />
+      
     </main>
   );
 }
