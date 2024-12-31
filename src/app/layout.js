@@ -1,6 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 export const metadata = {
   title: "Sumedha Niroshan",
