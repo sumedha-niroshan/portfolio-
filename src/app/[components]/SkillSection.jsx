@@ -168,7 +168,7 @@ function SkillSection() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
-          <Skill icon="/skills/mern.png" name="MEAN Stack" progress={70} />{" "}
+          <Skill icon="/skills/mern.png" name="MERN Stack" progress={70} />{" "}
           <Skill
             icon="/skills/frappe.png"
             name="Frappe Framework"

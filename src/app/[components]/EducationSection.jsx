@@ -7,13 +7,13 @@ import { PiCertificateFill } from "react-icons/pi";
 const cetificates = [
   {
     title: "Solution Architect Associate (Ongoing)",
-    image: "/cetification/image.png",
+    image: "/cetification/saa.png",
     liveLink: "",
     repoLink: "",
   },
   {
     title: "Cloud Practitioner Foundational (Ongoing)",
-    image: "/cetification/saa.png",
+    image: "/cetification/image.png",
     liveLink: "",
     repoLink: "",
   },
