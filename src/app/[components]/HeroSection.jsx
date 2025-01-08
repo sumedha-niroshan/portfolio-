@@ -19,7 +19,7 @@ function HeroSection() {
             Sumedha Niroshan
           </div>
           <div className="text-textcolor text-lg lg:text-xl font-semibold">
-            Associte DevOps Engineer
+            Associate DevOps Engineer
           </div>
           <p className="text-textcolor mt-5">
             Passionate Associate DevOps Engineer with 1 year of experience in
